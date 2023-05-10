@@ -151,3 +151,6 @@
 [submodule "tools/circt"]
 	path = tools/circt
 	url = https://github.com/llvm/circt.git
+[submodule "generators/hpu"]
+	path = generators/hpu
+	url = https://github.com/allpan3/Hyper.git
