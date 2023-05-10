@@ -149,7 +149,7 @@ lazy val chipyard = (project in file("generators/chipyard"))
   .dependsOn(testchipip, rocketchip, boom, hwacha, rocketchip_blocks, rocketchip_inclusive_cache, iocell,
     sha3, // On separate line to allow for cleaner tutorial-setup patches
     dsptools, rocket_dsp_utils,
-    gemmini, icenet, tracegen, cva6, nvdla, sodor, ibex, fft_generator,
+    gemmini, icenet, tracegen, cva6, nvdla, sodor, ibex, fft_generator, hpu,
     constellation, mempress, barf, shuttle, caliptra_aes)
   .settings(libraryDependencies ++= rocketLibDeps.value)
   .settings(
@@ -240,6 +240,11 @@ lazy val caliptra_aes = (project in file("generators/caliptra-aes-acc"))
   .settings(commonSettings)
 
 lazy val rocc_acc_utils = (project in file("generators/rocc-acc-utils"))
+  .dependsOn(rocketchip)
+  .settings(libraryDependencies ++= rocketLibDeps.value)
+  .settings(commonSettings)
+
+lazy val hpu = (project in file("generators/hpu"))
   .dependsOn(rocketchip)
   .settings(libraryDependencies ++= rocketLibDeps.value)
   .settings(commonSettings)
