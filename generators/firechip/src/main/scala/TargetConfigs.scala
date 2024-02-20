@@ -367,3 +367,12 @@ class FireSimLargeBoomCospikeConfig extends Config(
   new WithDefaultMemModel ++
   new WithFireSimConfigTweaks++
   new chipyard.LargeBoomConfig)
+
+//********************************************************************
+//  HPU SoC config, base off chipyard's CustomHPUSoCConfig
+//********************************************************************
+class FireSimCustomHPUSoCConfig extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.CustomHPUSoCConfig)
