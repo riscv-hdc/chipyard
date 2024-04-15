@@ -377,6 +377,11 @@ class FireSimCustomHPUSoCConfig extends Config(
   new WithFireSimConfigTweaks ++
   new chipyard.CustomHPUSoCConfig)
 
+class FireSimBaselineSoCConfig extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.BaselineSoCConfig)
 
 class FireSimCustomHPUSoCConfigdw128ehw4 extends Config(
   new WithDefaultFireSimBridges ++
