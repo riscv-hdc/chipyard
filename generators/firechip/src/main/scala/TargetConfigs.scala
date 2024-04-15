@@ -376,3 +376,124 @@ class FireSimCustomHPUSoCConfig extends Config(
   new WithDefaultMemModel ++
   new WithFireSimConfigTweaks ++
   new chipyard.CustomHPUSoCConfig)
+
+
+class FireSimCustomHPUSoCConfigdw128ehw4 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 128,
+    expandedHDWidth = 4
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw128ehw8 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 128,
+    expandedHDWidth = 8
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw128ehw16 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 128,
+    expandedHDWidth = 16
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw256ehw4 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 256,
+    expandedHDWidth = 4
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw256ehw8 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 256,
+    expandedHDWidth = 8
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw256ehw16 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 256,
+    expandedHDWidth = 16
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw512ehw4 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 512,
+    expandedHDWidth = 4
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw512ehw8 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 512,
+    expandedHDWidth = 8
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw512ehw16 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 512,
+    expandedHDWidth = 16
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw1024ehw4 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 1024,
+    expandedHDWidth = 4
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw1024ehw8 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 1024,
+    expandedHDWidth = 8
+  )
+)
+
+class FireSimCustomHPUSoCConfigdw1024ehw16 extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.ParametrizedHPUSoCConfig(
+    dataWidth = 1024,
+    expandedHDWidth = 16
+  )
+)
